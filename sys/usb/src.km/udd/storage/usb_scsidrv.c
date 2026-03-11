@@ -125,7 +125,7 @@ typedef struct SCSIDRV_Data
 static SCSIDRV_Data* private = NULL;
 static SCSIDRV scsidrv;
 static SCSIDRV oldscsi;
-static unsigned short USBbus = 3; /* default */
+const unsigned short USBbus = 4; /* default */
 
 /*
  * SCSIDRV handlers
@@ -563,7 +563,7 @@ SCSIDRV_InquireSCSI (short what, BUSINFO * info)
 	}
 
 	/*
-	 * We assign our BUS id no. 3
+	 * We assign our BUS id no. 4
 	 * We shouldn't fail here as we scanned the busses when we installed
 	 * so our USBbus number should be valid.
 	 */
