@@ -125,7 +125,7 @@ typedef struct SCSIDRV_Data
 static SCSIDRV_Data* private = NULL;
 static SCSIDRV scsidrv;
 static SCSIDRV oldscsi;
-const unsigned short USBbus = 4; /* default */
+static const unsigned short USBbus = 4; /* default */
 
 /*
  * SCSIDRV handlers
